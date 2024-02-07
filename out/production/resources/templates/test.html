@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+<form th:action="@{/user/test}" th:object="${user}" th:method="get">
+    <div>
+        <label>Название:&nbsp;</label>
+        <input type="text" th:field="*{name}"></input>
+    </div>
+    <div>
+        <button type="submit">Добавить в корзину</button>
+    </div>
+</form>
+</body>
+</html>
